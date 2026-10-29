@@ -1,13 +1,15 @@
 import { use } from "react";
 import Cart from "./Cart";
 
+
 const Features = ({promissedData}) => {
+    
 
     const features=use(promissedData)
-    console.log(features)
+    // console.log(features)
 
     return (
-       <div>
+       <div className="my-10">
          <div className="text-center ">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Premium Digital Tools</h2>
             <p className="text-gray-400 my-5">Choose from our curated collection of premium digital products designed to boost <br/>
