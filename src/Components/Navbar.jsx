@@ -40,8 +40,8 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="md:flex items-center gap-5">
-            {list.map((manu) => (
-              <li className="">{manu}</li>
+            {list.map((manu,i) => (
+              <li key={i} className="">{manu}</li>
             ))}
           </ul>
         </div>
