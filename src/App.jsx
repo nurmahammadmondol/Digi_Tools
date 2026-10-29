@@ -1,5 +1,5 @@
-
 import './App.css'
+import Banner from './Components/Banner'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -10,13 +10,14 @@ function App() {
       <section>
         <Navbar></Navbar>
       </section>
-      <section id="center">
-       
-      
-       
-      </section>
 
-    
+      <section>
+        <Banner></Banner>
+      </section>
+      
+      <section id="center">
+         
+      </section>
 
     </>
   )

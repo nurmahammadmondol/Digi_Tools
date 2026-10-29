@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm md:px-10 lg:px-20 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 space-y-1 p-2 shadow"
             >
                {
-                list.map(manu=><li className="hover:bg-gray-200">{manu}</li>)
+                list.map((manu, i)=><li key={i} className="hover:bg-gray-200">{manu}</li>)
             }
             </ul>
           </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
             <button><ShoppingCartMinus /></button>
           <button >Log in</button>
-          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</a>
+          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</button>
         </div>
       </div>
     </nav>
