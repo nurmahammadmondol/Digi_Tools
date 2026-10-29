@@ -1,17 +1,18 @@
 
 import './App.css'
+import Navbar from './Components/Navbar'
 
 function App() {
 
   return (
     <>
+
+      <section>
+        <Navbar></Navbar>
+      </section>
       <section id="center">
        
-        <div>
-          <h1 className='text-5xl font-bold text-red-500'>Get started</h1>
-          <button className='btn btn-primary mt-5 '>Click Me</button> 
-          
-        </div>
+      
        
       </section>
 
