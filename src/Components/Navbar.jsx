@@ -1,9 +1,7 @@
 import { ShoppingCartMinus } from "lucide-react";
 
 const Navbar = () => {
-
-    const list=['Products','Features', 'Pricing','Testimonials','FAQ'];
-
+  const list = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
 
   return (
     <nav>
@@ -28,29 +26,33 @@ const Navbar = () => {
                 />{" "}
               </svg>
             </div>
-            <ul
-             
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 space-y-1 p-2 shadow"
-            >
-               {
-                list.map((manu, i)=><li key={i} className="hover:bg-gray-200">{manu}</li>)
-            }
+            <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 space-y-1 p-2 shadow">
+              {list.map((manu, i) => (
+                <li key={i} className="hover:bg-gray-200">
+                  {manu}
+                </li>
+              ))}
             </ul>
           </div>
-          <a className="btn btn-ghost md:text-2xl lg:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Digi Tools</a>
+          <a className="btn btn-ghost md:text-2xl lg:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            Digi Tools
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="md:flex items-center gap-5">
-            {
-                list.map(manu=><li className="">{manu}</li>)
-            }
+            {list.map((manu) => (
+              <li className="">{manu}</li>
+            ))}
           </ul>
         </div>
         <div className="navbar-end flex gap-3">
-
-            <button><ShoppingCartMinus /></button>
-          <button >Log in</button>
-          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</button>
+          <button>
+            <ShoppingCartMinus />
+          </button>
+          <button>Log in</button>
+          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+            Get Started
+          </button>
         </div>
       </div>
     </nav>

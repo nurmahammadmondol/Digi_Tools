@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './Components/Banner'
+import Features from './Components/Features'
 import Navbar from './Components/Navbar'
 import Stutes from './Components/Stutes'
 
@@ -20,8 +21,8 @@ function App() {
         <Stutes></Stutes>
       </section>
       
-      <section id="center">
-         
+      <section>
+        <Features></Features>
       </section>
 
     </>
