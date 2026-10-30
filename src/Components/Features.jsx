@@ -79,7 +79,7 @@ const Features = ({ promissedData, setCartItem, cartItem }) => {
       <div
         className={`w-11/12 md:w-10/12 mx-auto mt-10 border border-gray-200 p-5 rounded-2xl ${showProduct && "hidden"}`}
       >
-        <h2>Your Cart</h2>
+        <h2 className="font-bold">Your Cart</h2>
 
         <div>
           {cartItem.map((item) => (
@@ -105,7 +105,7 @@ const Features = ({ promissedData, setCartItem, cartItem }) => {
 
           <div>
           </div>
-          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full w-full mt-5">Proceed to Checkout</button>
+          <button className={`btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full w-full mt-5 ${cartItem.length<=0 && 'hidden'}`}>Proceed to Checkout</button>
       </div>
     </div>
   );

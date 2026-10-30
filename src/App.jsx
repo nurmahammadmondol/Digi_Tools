@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Stutes from "./Components/Stutes";
 import Loading from "./Components/Loading";
 import { ToastContainer } from "react-toastify";
+import Steps3 from "./Components/Steps3";
 
 const fetchData = fetch("/Products.json").then((res) => res.json());
 
@@ -34,8 +35,11 @@ function App() {
         </Suspense>
       </section>
 
+      <section>
+        <Steps3></Steps3>
+      </section>
+
        <ToastContainer />
-     
     </>
   );
 }
