@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <section>
+      <section id="/">
         <Navbar cartItem={cartItem}></Navbar>
       </section>
 

@@ -34,7 +34,7 @@ const Navbar = ({cartItem}) => {
               ))}
             </ul>
           </div>
-          <a className="btn btn-ghost md:text-2xl lg:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+          <a href="/" className="btn btn-ghost md:text-2xl lg:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
             Digi Tools
           </a>
         </div>
