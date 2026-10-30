@@ -25,12 +25,12 @@ const Banner = () => {
               today. Explore Products.
             </p>
             <div className="flex items-center gap-2">
-              <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+              <a href="#Features" className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
                 Explore Products
-              </button>
-              <button className="btn btn-outline border-[#9514FA] text-[#9514FA] rounded-full">
+              </a>
+              <a href="#Pricing" className="btn btn-outline border-[#9514FA] text-[#9514FA] rounded-full">
                 Watch Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>

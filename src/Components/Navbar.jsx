@@ -53,9 +53,11 @@ const Navbar = ({cartItem}) => {
             <small className="bg-gray-200 px-1 rounded-full absolute top-2 ">{cartItem.length}</small>
           </button>
           <button>Log in</button>
-          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+          <a href="#Features">
+            <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
             Get Started
           </button>
+          </a>
         </div>
       </div>
     </nav>
