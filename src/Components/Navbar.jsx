@@ -1,6 +1,6 @@
 import { ShoppingCartMinus } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({cartItem}) => {
   const list = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
 
   return (
@@ -38,6 +38,7 @@ const Navbar = () => {
             Digi Tools
           </a>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="md:flex items-center gap-5">
             {list.map((manu,i) => (
@@ -45,9 +46,11 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
         <div className="navbar-end flex gap-3">
           <button>
-            <ShoppingCartMinus />
+            <ShoppingCartMinus className="relative"/>
+            <small className="bg-gray-200 px-1 rounded-full absolute top-2 ">{cartItem.length}</small>
           </button>
           <button>Log in</button>
           <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">

@@ -1,18 +1,24 @@
 import "./App.css";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Banner from "./Components/Banner";
 import Features from "./Components/Features";
 import Navbar from "./Components/Navbar";
 import Stutes from "./Components/Stutes";
 import Loading from "./Components/Loading";
+import { ToastContainer } from "react-toastify";
 
 const fetchData = fetch("/Products.json").then((res) => res.json());
 
 function App() {
+
+  const [cartItem, setCartItem]=useState([])
+  console.log(cartItem)
+
+
   return (
     <>
       <section>
-        <Navbar></Navbar>
+        <Navbar cartItem={cartItem}></Navbar>
       </section>
 
       <section>
@@ -25,9 +31,11 @@ function App() {
 
       <section>
         <Suspense fallback={<Loading></Loading>}>
-          <Features  promissedData={fetchData}></Features>
+          <Features cartItem={cartItem} setCartItem={setCartItem} promissedData={fetchData}></Features>
         </Suspense>
       </section>
+
+       <ToastContainer />
      
     </>
   );
