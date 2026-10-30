@@ -51,21 +51,18 @@ const Features = ({ promissedData, setCartItem, cartItem }) => {
         <div className="flex justify-center items-center gap-2">
           <button
             onClick={handleProduct}
-            className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full"
+            className={`btn px-5 rounded-full ${showProduct ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "btn-outline border-[#9514FA] text-[#9514FA]"}`}
           >
             Products
           </button>
-          <button
-            onClick={handleCart}
-            className="btn btn-outline border-[#9514FA] text-[#9514FA] rounded-full"
-          >
+          <button onClick={handleCart} className={`btn px-5 rounded-full ${showCart ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "btn-outline border-[#9514FA] text-[#9514FA]"}`}>
             Cart ({cartItem.length}/{features.length})
           </button>
         </div>
       </div>
 
       <div
-      id="features"
+        id="features"
         className={`grid md:grid-cols-2 lg:grid-cols-3 gap-10 w-11/12 md:w-10/12 mx-auto mt-10 ${showCart && "hidden"} `}
       >
         {features.map((feature) => (

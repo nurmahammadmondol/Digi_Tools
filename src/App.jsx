@@ -38,7 +38,7 @@ function App() {
         </Suspense>
       </section>
 
-      <section>
+      <section id="Steps3">
         <Steps3></Steps3>
       </section>
 

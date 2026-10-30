@@ -28,7 +28,7 @@ const Banner = () => {
               <a href="#Features" className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
                 Explore Products
               </a>
-              <a href="#Pricing" className="btn btn-outline border-[#9514FA] text-[#9514FA] rounded-full">
+              <a href="#Steps3" className="btn btn-outline border-[#9514FA] text-[#9514FA] rounded-full">
                 Watch Demo
               </a>
             </div>
