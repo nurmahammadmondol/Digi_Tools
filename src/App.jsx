@@ -12,7 +12,6 @@ const fetchData = fetch("/Products.json").then((res) => res.json());
 function App() {
 
   const [cartItem, setCartItem]=useState([])
-  console.log(cartItem)
 
 
   return (
